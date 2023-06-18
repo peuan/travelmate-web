@@ -1,10 +1,10 @@
 import { render, screen } from "@testing-library/react";
-import Home from "../components/Home";
+import About from "../components/About";
 
-describe("Home", () => {
-  it("renders a home page", () => {
-    render(<Home />);
-    const homePageElement = screen.getByText(/Home Page/i);
-    expect(homePageElement).toBeInTheDocument();
+describe("About", () => {
+  it("renders a about page", () => {
+    render(<About />);
+    const aboutPageElement = screen.getByText(/About Page/i);
+    expect(aboutPageElement).toBeInTheDocument();
   });
 });
