@@ -1,5 +1,4 @@
 import useSWR from "swr";
-
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 const url = "https://jsonplaceholder.typicode.com/posts";

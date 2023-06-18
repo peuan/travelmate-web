@@ -1,4 +1,4 @@
-import { PostProps } from "../types";
+import { PostProps } from "@/types";
 
 export default function Post({ post }: PostProps) {
   const { title, body, id } = post;

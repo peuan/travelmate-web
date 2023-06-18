@@ -5,7 +5,7 @@ import { useGetPosts } from "./components/useRequest";
 import { IPost } from "./types";
 
 export default function Home() {
-  const { data: posts, error } = useGetPosts();
+  const { data: posts } = useGetPosts();
 
   return (
     <main className={styles.main}>
