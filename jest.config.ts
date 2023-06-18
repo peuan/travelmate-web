@@ -16,6 +16,8 @@ const customJestConfig = {
   modulePaths: ["<rootDir>/src/"],
   moduleDirectories: ["node_modules", "<rootDir>/"],
   moduleFileExtensions: [...defaults.moduleFileExtensions, "d.ts"],
+  testPathIgnorePatterns: ["<rootDir>/src/app/e2e"],
+  modulePathIgnorePatterns: ["<rootDir>/src/app/e2e"],
   testTimeout: 15000,
 };
 
