@@ -13,6 +13,7 @@
     "test:ci": "jest --ci",
     "test-report": "jest --coverage",
     "test:e2e": "playwright test",
+    "playwright-ui": "playwright test --ui",
     "export": "next export",
     "build-storybook": "storybook build",
     "storybook": "storybook dev -p 6006"

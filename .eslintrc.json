@@ -5,7 +5,7 @@
     "next",
     "prettier"
   ],
-  "plugins": ["testing-library"],
+  "plugins": ["testing-library", "storybook"],
   "overrides": [
     // Only uses Testing Library lint rules in test files
     {
