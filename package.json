@@ -12,7 +12,8 @@
     "test": "jest --watch",
     "test:ci": "jest --ci",
     "test-report": "jest --coverage",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "export": "next export"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
