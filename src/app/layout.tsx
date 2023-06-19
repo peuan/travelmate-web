@@ -1,7 +1,7 @@
-import React from "react";
+import * as React from "react";
 import "./styles/globals.css";
-import { Inter } from "next/font/google";
-const inter = Inter({ subsets: ["latin"] });
+import ThemeRegistry from "@/theme/themeRegistry/ThemeRegistry";
+import MainLayout from "./layouts/main";
 
 export const metadata = {
   title: "Travel Mate",
@@ -15,7 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body suppressHydrationWarning={true}>
+        <ThemeRegistry>
+          <MainLayout>{children}</MainLayout>
+        </ThemeRegistry>
+      </body>
     </html>
   );
 }
