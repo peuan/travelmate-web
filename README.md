@@ -1,3 +1,9 @@
+# Travelmate for contributors
+
+- [Project Kick-off and Big Picture Overview](https://github.com/peuan/travelmate-web/blob/main/.github/project-kick-off-and-big-picture-overview.md)
+- [Purpose, Scope, Target Users, Use Cases, and Key Features / USP](https://github.com/peuan/travelmate-web/blob/main/.github/purpose-scope-target-users-use-cases-key-features.md)
+- [Technology Stack](https://github.com/peuan/travelmate-web/blob/main/.github/technology-stack.md)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
