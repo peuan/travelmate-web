@@ -1,33 +1,20 @@
 "use client";
-import { useEffect, useState } from "react";
+
 import styles from "./page.module.css";
 import Post from "@/components/Posts";
-import { getClientPosts, useGetPosts } from "@/components/useRequest";
 import { IPost } from "@/types";
+import { useGetPosts } from "@/hooks/useGetPosts";
 
 export default function PostPage() {
-  const [clientPosts, setClientPosts] = useState<IPost[] | null>(null);
+  const { data, error } = useGetPosts();
 
-  useEffect(() => {
-    const fetchPosts = async () => {
-      const posts = await getClientPosts();
-      setClientPosts(posts);
-    };
-
-    fetchPosts();
-  }, []);
-
-  const { data: serverPosts } = useGetPosts();
-
-  const posts = clientPosts || serverPosts?.data;
-
-  if (!posts) {
+  if (!data) {
     return <div>Loading...</div>;
   }
 
   return (
     <main className={styles.main}>
-      {posts.map((post: IPost) => (
+      {(data as IPost[]).map((post: IPost) => (
         <Post post={post} key={post.id} />
       ))}
     </main>

@@ -48,7 +48,6 @@ export default function MainLayout({
     setAnchorElUser(null);
   };
   const handleClickNavMenu = (page: string) => {
-    console.log(page);
     router.push(page.toLocaleLowerCase());
   };
 
