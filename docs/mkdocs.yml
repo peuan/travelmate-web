@@ -1,0 +1,8 @@
+site_name: "Travelmate - Contributing Guide"
+repo_url: https://github.com/peuan/travelmate-web
+edit_uri: edit/main/.github/project-kick-off-and-big-picture-overview.md
+
+nav:
+  - Project Kick-off and Big Picture Overview 🚀: .github/project-kick-off-and-big-picture-overview.md
+plugins:
+  - techdocs-core
