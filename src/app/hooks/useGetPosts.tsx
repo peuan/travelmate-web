@@ -1,11 +1,11 @@
-import { fetcher } from "@/libs/fetcher";
+import fetcher from "@/libs/fetcher";
+import { IPost } from "@/types";
 import useSWR from "swr";
 
 const url = "https://jsonplaceholder.typicode.com/posts";
 
-export const useGetPosts = () => {
-  const { data, error } = useSWR(url, fetcher);
-  const isLoading = !error && !data;
+export const useGetPosts = (fallback?: any) => {
+  const { data, error } = useSWR<IPost[]>(url, fetcher, { fallback: { data: fallback } });
 
-  return { data, error, isLoading };
+  return { data, error };
 };
