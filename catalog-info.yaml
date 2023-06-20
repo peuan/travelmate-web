@@ -14,3 +14,16 @@ spec:
   type: website
   lifecycle: production
   owner: guests
+  documentation:
+    - type: inline
+      name: Project Kick-off and Big Picture Overview 🚀
+      description: Overview of the project kick-off and big picture.
+      target: https://github.com/peuan/travelmate-web/blob/main/.github/project-kick-off-and-big-picture-overview.md
+    - type: inline
+      name: Purpose and Scope
+      description: Details about the purpose, scope, target users, use cases, and key features.
+      target: https://github.com/peuan/travelmate-web/blob/main/.github/purpose-scope-target-users-use-cases-key-features.md
+    - type: inline
+      name: Tech Stack
+      description: Information about the technology stack used in the project.
+      target: https://github.com/peuan/travelmate-web/blob/main/.github/technology-stack.md
