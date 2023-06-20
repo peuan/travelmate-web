@@ -6,15 +6,18 @@ import { IPost } from "@/types";
 import { useGetPosts } from "@/hooks/useGetPosts";
 
 export default function PostPage() {
-  const { data, error } = useGetPosts();
+  const url = "https://jsonplaceholder.typicode.com/posts";
+  const { data, error } = useGetPosts()
 
+  if (error) return <div>failed to load</div>
   if (!data) {
     return <div>Loading...</div>;
   }
 
   return (
     <main className={styles.main}>
-      {(data as IPost[]).map((post: IPost) => (
+      <h1>Client Side</h1>
+      {data.map((post: IPost) => (
         <Post post={post} key={post.id} />
       ))}
     </main>
