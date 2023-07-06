@@ -44,8 +44,13 @@ export default function MainLayout({
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
+  const handleCloseUserMenu = (page?: string) => {
     setAnchorElUser(null);
+    const pageRoute = page?.toLocaleLowerCase();
+    if (pageRoute === 'logout') {
+      router.push('/login');
+    }
+
   };
   const handleClickNavMenu = (page: string) => {
     router.push(page.toLocaleLowerCase());
@@ -162,10 +167,10 @@ export default function MainLayout({
                   horizontal: "right",
                 }}
                 open={Boolean(anchorElUser)}
-                onClose={handleCloseUserMenu}
+                onClose={(() => handleCloseUserMenu)}
               >
                 {settings.map((setting) => (
-                  <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                  <MenuItem key={setting} onClick={() => handleCloseUserMenu(setting)}>
                     <Typography textAlign="center">{setting}</Typography>
                   </MenuItem>
                 ))}
