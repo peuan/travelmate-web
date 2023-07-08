@@ -1,5 +1,5 @@
 
-import { useGetUser } from "@/hooks/useGetUser";
+import { useGetUser } from "../../hooks/useGetUser";
 import styles from "./page.module.css";
 
 export default async function ProductPage() {

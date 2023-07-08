@@ -1,6 +1,6 @@
 import * as React from "react";
-import "./styles/globals.css";
-import ThemeRegistry from "@/theme/themeRegistry/ThemeRegistry";
+import "../styles/globals.css";
+import ThemeRegistry from "../theme/themeRegistry/ThemeRegistry";
 import MainLayout from "./layouts/main";
 
 export const metadata = {
