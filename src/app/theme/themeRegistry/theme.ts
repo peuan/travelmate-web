@@ -8,6 +8,18 @@ import GoogleInterFont from "@/fonts/fonts";
 // apply fonts to all other typography options like headings, subtitles, etc...
 const defaultTheme = createTheme(
   {
+    palette: {
+      background: {
+        paper: "#fff",
+      },
+      text: {
+        primary: "#173A5E",
+        secondary: "#46505A",
+      },
+      primary: {
+        main: "#0098F5",
+      },
+    },
     typography: {
       fontFamily: GoogleInterFont.style.fontFamily,
       body1: { fontFamily: GoogleInterFont.style.fontFamily },
