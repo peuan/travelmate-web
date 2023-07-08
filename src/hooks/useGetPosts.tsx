@@ -1,5 +1,5 @@
-import fetcher from "@/libs/fetcher";
-import { IPost } from "@/types";
+import fetcher from "../libs/fetcher";
+import { IPost } from "../types";
 import useSWR from "swr";
 
 const url = "https://jsonplaceholder.typicode.com/posts";

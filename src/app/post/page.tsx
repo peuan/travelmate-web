@@ -1,9 +1,9 @@
 "use client";
 
 import styles from "./page.module.css";
-import Post from "@/components/Posts";
-import { IPost } from "@/types";
-import { useGetPosts } from "@/hooks/useGetPosts";
+import Post from "../../components/Posts";
+import { IPost } from "../../types";
+import { useGetPosts } from "../../hooks/useGetPosts";
 
 export default function PostPage() {
   const url = "https://jsonplaceholder.typicode.com/posts";
